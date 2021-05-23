@@ -24,7 +24,7 @@ var User = require('./../db’).
 
 2. В файле 'app.js' в строке 16 добавлено "app.listen(process.env.APP_PORT, function() {", а так же в файле .env в строке 6 добавлено "APP_PORT=4000".
 
-3. Error: Dialect needs to be explicitly supplied as of v4.0.0
+3. Error: Dialect needs to be explicitly supplied as of v4.0.0. Переустановка пакета 'PG'. NPM uninstall pg/  npm install "pg".
 
 
 Рефактор:
