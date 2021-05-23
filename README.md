@@ -19,3 +19,14 @@ var User = require('./../db’).
 
 
 Ошибки в логике:
+
+1. Добавлена строка 5 "DB_PORT=5433" в ".evn" файл. В db.js добавлено "port: process.env.DB_PORT" в строке 7 и "process.env.DB_PORT" в строке 4.
+
+2. В файле 'app.js' в строке 16 добавлено "app.listen(process.env.APP_PORT, function() {", а так же в файле .env в строке 6 добавлено "APP_PORT=4000".
+
+3. Error: Dialect needs to be explicitly supplied as of v4.0.0
+
+
+Рефактор:
+
+1. var заменен на const.
