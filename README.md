@@ -1,7 +1,7 @@
 3 пункт самопроверки в PR:
 
 
-Ошибки компиляции:
+Ошибки компиляции: (+30 баллов)
 
 1. ReferenceError: Router is not defined. Router() исправлено на require('express').Router(). в строке 1 файла 'usercontroller.js’.
 
@@ -18,7 +18,7 @@ var User = require('./../db’).
 
 
 
-Ошибки в логике:
+Ошибки в логике: (+18 баллов)
 
 1. Добавлена строка 5 "DB_PORT=5433" в ".evn" файл. В db.js добавлено "port: process.env.DB_PORT" в строке 7 и "process.env.DB_PORT" в строке 4.
 
@@ -27,6 +27,9 @@ var User = require('./../db’).
 3. Error: Dialect needs to be explicitly supplied as of v4.0.0. Переустановка пакета 'PG'. NPM uninstall pg/  npm install "pg".
 
 
-Рефактор:
+Рефактор: (+5 бвллов)
 
 1. var заменен на const.
+
+
+итог: 53 балла
